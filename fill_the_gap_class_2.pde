@@ -323,9 +323,12 @@ class textbox
               delay(300);//protection from false positive
               if(check==key)//protection from false positive
                 {
-                  typing = typing + key;
-                  typing=typing.toUpperCase();
+                  char k=key;
+                  delay(300);
+                  typing = typing + k;
+                  
                   delay(300);//protection from duplicates
+                  typing=typing.toUpperCase();
                  }
              } 
           }
